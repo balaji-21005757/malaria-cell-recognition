@@ -195,20 +195,23 @@ plt.show()
 
 ### Training Loss, Validation Loss Vs Iteration Plot:
 
-![image](https://github.com/SOMEASVAR/malaria-cell-recognition/assets/93434149/513b341e-535a-4fd6-8218-95ef96445da7)
+![image](https://github.com/balaji-21005757/malaria-cell-recognition/assets/94372294/5f27b9b2-7bfa-4497-bc96-6c81202cbb89)
+
 
 
 ### Classification Report:
-![image](https://github.com/SOMEASVAR/malaria-cell-recognition/assets/93434149/7ef0deec-c612-4007-b0b3-e13fed02b655)
+
+![image](https://github.com/balaji-21005757/malaria-cell-recognition/assets/94372294/3cdf0c54-0b58-4af9-83b2-c0f5afe42169)
 
 
 ### Confusion Matrix:
+![image](https://github.com/balaji-21005757/malaria-cell-recognition/assets/94372294/a8458a74-1868-4f97-81bd-471d57ac416d)
 
-![image](https://github.com/SOMEASVAR/malaria-cell-recognition/assets/93434149/3d038622-b3e0-4770-9076-f80cde2a7137)
 
 ### New Sample Data Prediction:
+![image](https://github.com/balaji-21005757/malaria-cell-recognition/assets/94372294/c89be012-818a-440d-a6b2-533b8a104df5)
 
-![image](https://github.com/SOMEASVAR/malaria-cell-recognition/assets/93434149/1304d333-4c88-4556-8cf5-785a74820e49)
+
 
 
 ## RESULT:
