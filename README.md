@@ -128,23 +128,19 @@ image_gen.flow_from_directory(test_path)
 ### DL Model - Build & Compile:
 ```
 model = models.Sequential()
-model.add(keras.Input(shape=(image_shape)))
-model.add(layers.Conv2D(filters=32,kernel_size=(3,3),activation='relu',))
-model.add(layers.MaxPooling2D(pool_size=(2, 2)))
-
-model.add(layers.Conv2D(filters=64, kernel_size=(3,3), activation='relu',))
-model.add(layers.MaxPooling2D(pool_size=(2, 2)))
-
-model.add(layers.Conv2D(filters=64, kernel_size=(3,3), activation='relu',))
-model.add(layers.MaxPooling2D(pool_size=(2, 2)))
-
+model.add(keras.Input(image_shape))
+model.add(layers.Conv2D(filters = 64,kernel_size=(7,7),activation='relu'))
+model.add(layers.MaxPool2D(pool_size=(2,2)))
+model.add(layers.Conv2D(filters = 32,kernel_size=(5,5),activation='relu'))
+model.add(layers.MaxPool2D(pool_size=(2,2)))
+model.add(layers.Conv2D(filters = 22,kernel_size=(5,5),activation='relu'))
+model.add(layers.MaxPool2D(pool_size=(2,2)))
 model.add(layers.Flatten())
-
-model.add(layers.Dense(128))
-model.add(layers.Dense(64,ativation='relu'))
-model.add(layers.Dropout(0.5))
 model.add(layers.Dense(1,activation='sigmoid'))
-model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
+
+model.compile(loss='binary_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
 model.summary()
 
 batch_size = 16
